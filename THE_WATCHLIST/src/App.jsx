@@ -39,7 +39,7 @@ const router = createBrowserRouter([{
   path:"/watchlist",
   element:<WatchList />,
 },
-])
+],{basename: import.meta.env.DEV ? '/' : '/Watchlist-App'})
 
   return (
     <RouterProvider router={router}/>
