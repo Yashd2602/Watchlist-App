@@ -1,6 +1,7 @@
 import React, { useState } from 'react'
 import { cinemaState } from '../Context/Context'
 import { Link } from 'react-router-dom'
+import file from "../assets/file.png"
 
 function WatchList() {
     const{state:{theWatchList},dispatch} = cinemaState()
@@ -8,7 +9,7 @@ function WatchList() {
   
   return (<>
       <div className='watchlist-Header' key={theWatchList.id}><h1>The~Watchlist</h1> 
-    <Link to="/"><img className='watchlist-icon' src="/img/file.png" alt="Watchlist" /></Link>
+    <Link to="/"><img className='watchlist-icon' src={file} alt="Watchlist" /></Link>
     <Link to= "/"><button>Explore More Movies & TV_Shows</button></Link></div>
     <div className='filters'>
       <label>
