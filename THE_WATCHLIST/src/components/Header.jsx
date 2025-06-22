@@ -5,7 +5,7 @@ import file from "../assets/file.png"
 
 function Header() {
   return (
-    <div className='Header'><h1>The~Watchlist</h1> 
+    <div className='Header'><Link to="/"><h1>The~Watchlist</h1></Link> 
     <Link to="/"><img className='watchlist-icon' src={file} alt="Watchlist" /></Link>
     <Link to='/watchlist'><button>WatchList</button></Link>
     <Link to= "/"><button>Explore More Movies & TV_Shows</button></Link>

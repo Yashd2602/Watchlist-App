@@ -14,16 +14,16 @@ function Homepage() {
     setGenre('tv')
   }
     
-  return (
+  return (<>
     <div className='container'>
-      <div className='Header'><h1>The~Watchlist</h1> 
+      <div className='Header'><Link to="/"><h1>The~WatchList</h1></Link> 
           <Link to="/"><img className='watchlist-icon' src={file} alt="Watchlist" /></Link>
           <Link to='/watchlist'><button>WatchList</button></Link></div>
       <div className='homepage'>
        <Link to="/movies"><button onClick={getMovies}>Movies</button></Link> <img className='cinema-time' src={bookmark} alt="" /><Link to="/tvshows"><button onClick={getTV}>TV Shows</button></Link>
       </div>
     </div>
-  )
+  </>)
 }
 
 export default Homepage

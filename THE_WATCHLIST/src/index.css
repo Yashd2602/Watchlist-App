@@ -5,6 +5,9 @@
   box-sizing: border-box;
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
+a{
+  text-decoration: none;
+}
 
 body {
   background-color: #0d0d0d;
@@ -32,6 +35,8 @@ body {
 .Header h1, .watchlist-Header h1 {
   color: #e50914;
   font-size: 2rem;
+  cursor: pointer;
+  text-decoration: none;
 }
 
 .Header button, .watchlist-Header button {
